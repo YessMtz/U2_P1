@@ -87,6 +87,9 @@ namespace MenuPaint
         {
 
         }
+
+       
+
         //DIBUJAR
         private void Lapiz_ClickDown(object sender, MouseEventArgs e)
         {
@@ -98,6 +101,8 @@ namespace MenuPaint
             cx = e.X;
             cy = e.Y;
         }
+
+        
 
         private void Lapiz_ClickMove(object sender, MouseEventArgs e)
         {
@@ -133,7 +138,12 @@ namespace MenuPaint
                 sy = e.Y - cy;
             }
         }
-        
+        //  ACCIONES DE LA CUBETA
+        private void Cubeta_Click(object sender, EventArgs e)
+        {
+            index = 6;  
+        }
+
         //ACCIONES DEL BORRADOR
         private void Borrador_Click(object sender, EventArgs e)
         {
@@ -158,8 +168,50 @@ namespace MenuPaint
         {
             index = 5;
         }
+        
+        //Condicionales para dibujar
+        private void LapizPaint(object sender, PaintEventArgs e)
+        {
 
+            Graphics gPaint = e.Graphics;
+            if(paint)
+            {
+                if (index == 3)
+                {
+                    gLapiz.DrawEllipse(lapiz, cx, cy, sx, sy);
+                }
 
+                //PARA DIBUJAR EL RECTANGULO
+                if (index == 4)
+                {
+                    gLapiz.DrawRectangle(lapiz, cx, cy, sx, sy);
+                }
+
+                //PARA DIBUJAR LINEA RECTA
+                if (index == 5)
+                {
+                    gLapiz.DrawLine(lapiz, cx, cy, x, y);
+                }
+            }
+
+        }
+
+        //LIMPIA LA FORMA 
+        private void Nuevo_Click(object sender, EventArgs e)
+        {
+            gLapiz.Clear(Color.White);
+            Lapiz.Image = bmLapiz;
+            index= 0;
+
+        }
+
+        //CUBETA
+        static Point set_Point(PictureBox cajita, Point punto)
+        {
+            float px = 1f * cajita.Width / cajita.Width;
+            float py = 1f * cajita.Height / cajita.Height;
+            return new Point (int )
+        }
 
        
     }

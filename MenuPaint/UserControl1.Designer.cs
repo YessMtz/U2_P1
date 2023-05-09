@@ -47,9 +47,10 @@
             this.Colores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Colores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Colores.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Colores.Location = new System.Drawing.Point(20, 22);
+            this.Colores.Location = new System.Drawing.Point(15, 18);
+            this.Colores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Colores.Name = "Colores";
-            this.Colores.Size = new System.Drawing.Size(100, 100);
+            this.Colores.Size = new System.Drawing.Size(75, 81);
             this.Colores.TabIndex = 0;
             this.Colores.UseVisualStyleBackColor = false;
             // 
@@ -60,11 +61,13 @@
             this.Cubeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Cubeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cubeta.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Cubeta.Location = new System.Drawing.Point(136, 22);
+            this.Cubeta.Location = new System.Drawing.Point(102, 18);
+            this.Cubeta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Cubeta.Name = "Cubeta";
-            this.Cubeta.Size = new System.Drawing.Size(100, 100);
+            this.Cubeta.Size = new System.Drawing.Size(75, 81);
             this.Cubeta.TabIndex = 1;
             this.Cubeta.UseVisualStyleBackColor = false;
+            this.Cubeta.Click += new System.EventHandler(this.Cubeta_Click);
             // 
             // Lapiz
             // 
@@ -73,12 +76,14 @@
             this.Lapiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Lapiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Lapiz.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Lapiz.Location = new System.Drawing.Point(255, 22);
+            this.Lapiz.Location = new System.Drawing.Point(191, 18);
+            this.Lapiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Lapiz.Name = "Lapiz";
-            this.Lapiz.Size = new System.Drawing.Size(100, 100);
+            this.Lapiz.Size = new System.Drawing.Size(75, 81);
             this.Lapiz.TabIndex = 2;
             this.Lapiz.UseVisualStyleBackColor = false;
             this.Lapiz.Click += new System.EventHandler(this.Lapiz_Click);
+            this.Lapiz.Paint += new System.Windows.Forms.PaintEventHandler(this.LapizPaint);
             this.Lapiz.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Lapiz_ClickDown);
             this.Lapiz.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Lapiz_ClickMove);
             this.Lapiz.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Lapiz_ClickUp);
@@ -90,9 +95,10 @@
             this.Borrador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Borrador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Borrador.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Borrador.Location = new System.Drawing.Point(375, 22);
+            this.Borrador.Location = new System.Drawing.Point(281, 18);
+            this.Borrador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Borrador.Name = "Borrador";
-            this.Borrador.Size = new System.Drawing.Size(100, 100);
+            this.Borrador.Size = new System.Drawing.Size(75, 81);
             this.Borrador.TabIndex = 3;
             this.Borrador.UseVisualStyleBackColor = false;
             this.Borrador.Click += new System.EventHandler(this.Borrador_Click);
@@ -104,9 +110,10 @@
             this.Linea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Linea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Linea.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Linea.Location = new System.Drawing.Point(497, 22);
+            this.Linea.Location = new System.Drawing.Point(373, 18);
+            this.Linea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Linea.Name = "Linea";
-            this.Linea.Size = new System.Drawing.Size(100, 100);
+            this.Linea.Size = new System.Drawing.Size(75, 81);
             this.Linea.TabIndex = 4;
             this.Linea.UseVisualStyleBackColor = false;
             this.Linea.Click += new System.EventHandler(this.Linea_Click);
@@ -118,9 +125,10 @@
             this.Rect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Rect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rect.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Rect.Location = new System.Drawing.Point(620, 22);
+            this.Rect.Location = new System.Drawing.Point(465, 18);
+            this.Rect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rect.Name = "Rect";
-            this.Rect.Size = new System.Drawing.Size(100, 100);
+            this.Rect.Size = new System.Drawing.Size(75, 81);
             this.Rect.TabIndex = 5;
             this.Rect.UseVisualStyleBackColor = false;
             this.Rect.Click += new System.EventHandler(this.Rect_Click);
@@ -132,9 +140,10 @@
             this.Circulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Circulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Circulo.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Circulo.Location = new System.Drawing.Point(745, 22);
+            this.Circulo.Location = new System.Drawing.Point(559, 18);
+            this.Circulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Circulo.Name = "Circulo";
-            this.Circulo.Size = new System.Drawing.Size(100, 100);
+            this.Circulo.Size = new System.Drawing.Size(75, 81);
             this.Circulo.TabIndex = 6;
             this.Circulo.UseVisualStyleBackColor = false;
             this.Circulo.Click += new System.EventHandler(this.Circulo_Click);
@@ -144,11 +153,12 @@
             this.Guardar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Guardar.Font = new System.Drawing.Font("Bonita", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Guardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Guardar.Location = new System.Drawing.Point(923, 22);
+            this.Guardar.Location = new System.Drawing.Point(692, 18);
+            this.Guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Guardar.Name = "Guardar";
-            this.Guardar.Size = new System.Drawing.Size(100, 49);
+            this.Guardar.Size = new System.Drawing.Size(87, 40);
             this.Guardar.TabIndex = 7;
             this.Guardar.Text = "GUARDAR";
             this.Guardar.UseVisualStyleBackColor = false;
@@ -159,18 +169,20 @@
             this.Nuevo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Nuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Nuevo.Font = new System.Drawing.Font("Bonita", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nuevo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Nuevo.Location = new System.Drawing.Point(923, 77);
+            this.Nuevo.Location = new System.Drawing.Point(692, 63);
+            this.Nuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Nuevo.Name = "Nuevo";
-            this.Nuevo.Size = new System.Drawing.Size(100, 49);
+            this.Nuevo.Size = new System.Drawing.Size(87, 40);
             this.Nuevo.TabIndex = 8;
             this.Nuevo.Text = "NUEVO";
             this.Nuevo.UseVisualStyleBackColor = false;
+            this.Nuevo.Click += new System.EventHandler(this.Nuevo_Click);
             // 
             // BarraHerramientas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.Nuevo);
@@ -182,8 +194,9 @@
             this.Controls.Add(this.Lapiz);
             this.Controls.Add(this.Cubeta);
             this.Controls.Add(this.Colores);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BarraHerramientas";
-            this.Size = new System.Drawing.Size(1055, 150);
+            this.Size = new System.Drawing.Size(817, 122);
             this.ResumeLayout(false);
 
         }
