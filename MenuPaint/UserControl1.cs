@@ -162,7 +162,12 @@ namespace MenuPaint
         {
             index = 4;
         }
-        
+
+        private void BarraHerramientas_Load(object sender, EventArgs e)
+        {
+
+        }
+
         //DIBUJAR LINEA RECTA
         private void Linea_Click(object sender, EventArgs e)
         {
@@ -210,9 +215,45 @@ namespace MenuPaint
         {
             float px = 1f * cajita.Width / cajita.Width;
             float py = 1f * cajita.Height / cajita.Height;
-            return new Point (int )
+            return new Point ((int)(punto.X * px), (int)(punto.Y*py));
         }
 
-       
+        //validacion
+        private void Validate(Bitmap bmValdate , Stack<Point> StackPoint, int x, int y, Color Old_Color, Color nuevoColor)
+        {
+            Color ColorX = bmValdate.GetPixel(x, y);
+            if(ColorX == Old_Color)
+            {
+
+                StackPoint.Push(new Point (x, y));
+                bmValdate.SetPixel(x, y, nuevoColor);
+            }
+
+        }
+
+        public void Fill(Bitmap bmFill, int x, int y, Color New_Color)
+        {
+            Color Old_Color = bmFill.GetPixel(x, y);
+            Stack<Point> pixel = new Stack<Point>();
+            pixel.Push(new Point(x, y));
+            bmFill.SetPixel(x, y, New_Color);
+
+                if(Old_Color == New_Color)
+                {
+                return;
+                }
+
+                while(pixel.Count>0)
+                {
+                Point puntoNuevo = (Point)pixel.Pop();
+                    if(puntoNuevo.X >0 && puntoNuevo.Y>0 && puntoNuevo.X<bmFill.Width-1 && puntoNuevo.Y<bmFill.Height-1)
+                {
+                    Validate(bmFill, pixel, puntoNuevo.X - 1, puntoNuevo.Y - 1, Old_Color, New_Color);
+                    Validate(bmFill, pixel, puntoNuevo.X, puntoNuevo.Y-1, Old_Color, New_Color);
+                    Validate(bmFill, pixel, puntoNuevo.X + 1, puntoNuevo.Y, Old_Color, New_Color);
+                    Validate(bmFill, pixel, puntoNuevo.X - 1, puntoNuevo.Y + 1, Old_Color, New_Color);
+                }
+            }
+        }
     }
 }

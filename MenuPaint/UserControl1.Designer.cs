@@ -48,7 +48,7 @@
             this.Colores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Colores.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Colores.Location = new System.Drawing.Point(15, 18);
-            this.Colores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Colores.Margin = new System.Windows.Forms.Padding(2);
             this.Colores.Name = "Colores";
             this.Colores.Size = new System.Drawing.Size(75, 81);
             this.Colores.TabIndex = 0;
@@ -62,7 +62,7 @@
             this.Cubeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cubeta.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Cubeta.Location = new System.Drawing.Point(102, 18);
-            this.Cubeta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cubeta.Margin = new System.Windows.Forms.Padding(2);
             this.Cubeta.Name = "Cubeta";
             this.Cubeta.Size = new System.Drawing.Size(75, 81);
             this.Cubeta.TabIndex = 1;
@@ -77,7 +77,7 @@
             this.Lapiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Lapiz.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Lapiz.Location = new System.Drawing.Point(191, 18);
-            this.Lapiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Lapiz.Margin = new System.Windows.Forms.Padding(2);
             this.Lapiz.Name = "Lapiz";
             this.Lapiz.Size = new System.Drawing.Size(75, 81);
             this.Lapiz.TabIndex = 2;
@@ -96,7 +96,7 @@
             this.Borrador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Borrador.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Borrador.Location = new System.Drawing.Point(281, 18);
-            this.Borrador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Borrador.Margin = new System.Windows.Forms.Padding(2);
             this.Borrador.Name = "Borrador";
             this.Borrador.Size = new System.Drawing.Size(75, 81);
             this.Borrador.TabIndex = 3;
@@ -111,7 +111,7 @@
             this.Linea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Linea.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Linea.Location = new System.Drawing.Point(373, 18);
-            this.Linea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Linea.Margin = new System.Windows.Forms.Padding(2);
             this.Linea.Name = "Linea";
             this.Linea.Size = new System.Drawing.Size(75, 81);
             this.Linea.TabIndex = 4;
@@ -126,7 +126,7 @@
             this.Rect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rect.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Rect.Location = new System.Drawing.Point(465, 18);
-            this.Rect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Rect.Margin = new System.Windows.Forms.Padding(2);
             this.Rect.Name = "Rect";
             this.Rect.Size = new System.Drawing.Size(75, 81);
             this.Rect.TabIndex = 5;
@@ -141,7 +141,7 @@
             this.Circulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Circulo.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Circulo.Location = new System.Drawing.Point(559, 18);
-            this.Circulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Circulo.Margin = new System.Windows.Forms.Padding(2);
             this.Circulo.Name = "Circulo";
             this.Circulo.Size = new System.Drawing.Size(75, 81);
             this.Circulo.TabIndex = 6;
@@ -156,7 +156,7 @@
             this.Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Guardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Guardar.Location = new System.Drawing.Point(692, 18);
-            this.Guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Guardar.Margin = new System.Windows.Forms.Padding(2);
             this.Guardar.Name = "Guardar";
             this.Guardar.Size = new System.Drawing.Size(87, 40);
             this.Guardar.TabIndex = 7;
@@ -172,7 +172,7 @@
             this.Nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nuevo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Nuevo.Location = new System.Drawing.Point(692, 63);
-            this.Nuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Nuevo.Margin = new System.Windows.Forms.Padding(2);
             this.Nuevo.Name = "Nuevo";
             this.Nuevo.Size = new System.Drawing.Size(87, 40);
             this.Nuevo.TabIndex = 8;
@@ -194,9 +194,10 @@
             this.Controls.Add(this.Lapiz);
             this.Controls.Add(this.Cubeta);
             this.Controls.Add(this.Colores);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BarraHerramientas";
             this.Size = new System.Drawing.Size(817, 122);
+            this.Load += new System.EventHandler(this.BarraHerramientas_Load);
             this.ResumeLayout(false);
 
         }
