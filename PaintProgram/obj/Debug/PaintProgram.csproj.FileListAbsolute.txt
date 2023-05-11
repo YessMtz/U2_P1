@@ -1,0 +1,10 @@
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\bin\Debug\PaintProgram.exe.config
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\bin\Debug\PaintProgram.exe
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\bin\Debug\PaintProgram.pdb
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\obj\Debug\PaintProgram.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\obj\Debug\PaintProgram.Pinturitas.resources
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\obj\Debug\PaintProgram.Properties.Resources.resources
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\obj\Debug\PaintProgram.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\obj\Debug\PaintProgram.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\obj\Debug\PaintProgram.exe
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\U2_P1\PaintProgram\obj\Debug\PaintProgram.pdb
