@@ -1,0 +1,10 @@
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\bin\Debug\MenuPaint.dll
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\bin\Debug\MenuPaint.pdb
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.csproj.AssemblyReference.cache
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.Properties.Resources.resources
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.BarraHerramientas.resources
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.csproj.GenerateResource.cache
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.csproj.CoreCompileInputs.cache
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.dll
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.pdb
+C:\Users\LAB-DSC-ITT\Documents\GitHub\U2_P1\MenuPaint\obj\Debug\MenuPaint.Form1.resources
